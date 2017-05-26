@@ -47,5 +47,12 @@ namespace Enigma {
 
             return codierung;
         }
+
+        public char Verschluesseln (char pWert) {
+            var ergebnis = (int) pWert + fVerschluesselungstabelle[fWalzenstellung + 1];
+            if (ergebnis > 90)
+                ergebnis -= 26;
+            return (char) ergebnis;
+        }
     }
 }
