@@ -7,6 +7,12 @@ using System.Threading.Tasks;
 namespace Enigma {
     class cWalze {
         private int[] fVerschluesselungstabelle;
+        private int fWalzenstellung;
+
+        public int Walzenstellung {
+            get { return fWalzenstellung; }
+            set { fWalzenstellung = value; }
+        }
 
         public cWalze(int pWalzennummer) {
             switch (pWalzennummer) {
