@@ -39,7 +39,7 @@ namespace Enigma {
             var counter = 0;
 
             foreach(char i in pWalzenCode) {
-                var currentValue = (counter + 1) + (int) char.GetNumericValue(i);
+                var currentValue = (counter + 1) + (int) i;
                 if (currentValue > 90)
                     currentValue -= 26;
                 codierung[counter] = currentValue;
